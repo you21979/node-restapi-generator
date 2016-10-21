@@ -1,0 +1,21 @@
+---
+settings: 
+ name: testapi
+apis:
+ - method: getTicker
+   params: 
+     - symbol: string
+       length: 10
+   text: ティッカー取得
+   return:
+     - symbol: string
+       length: 10
+     - price: string
+       length: 10
+ - method: getDepth
+   params: 
+     - name: symbol
+       type: string
+       len: 10
+       text: シンボル名
+   text: 板取得
